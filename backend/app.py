@@ -23,7 +23,7 @@ def get_response():
         return jsonify({"error": "Query is required"}), 400
 
     # Load the index and create the query engine inside the route
-    storage_context = StorageContext.from_defaults(persist_dir="C:/Users/PMLS/Documents/University/FYP/KBot/backend/KBot Storage")
+    storage_context = StorageContext.from_defaults(persist_dir="KBot Storage")
     index = load_index_from_storage(storage_context)
     query_engine = index.as_query_engine()
 
