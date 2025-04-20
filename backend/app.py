@@ -11,6 +11,10 @@ load_dotenv()
 
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
+@app.route('/')
+def home():
+    return 'Hello from Flask!'
+
 @app.route('/response', methods=['POST'])
 def get_response():
     data = request.json
