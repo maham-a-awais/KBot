@@ -60,7 +60,7 @@ export default function WelcomeScreen() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="absolute top-1/3 left-1/3 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-20 w-full max-w-xl px-4"
+          className="absolute top-1/3 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-20 w-full max-w-xl px-4"
         >
           <h1 className="text-5xl font-bold mb-2 drop-shadow-lg">Welcome To KBot!</h1>
           <p className="mb-8 text-lg text-gray-100">
