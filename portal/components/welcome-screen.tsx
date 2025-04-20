@@ -56,7 +56,7 @@ export default function WelcomeScreen() {
           ))}
         </div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
@@ -69,6 +69,26 @@ export default function WelcomeScreen() {
           <Link
             href="/chat"
             className="group inline-flex items-center gap-2 py-4 px-8 bg-[#8f0e0e] text-white text-xl font-medium rounded-full hover:bg-[#a51212] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+          >
+            Get Started
+            <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+          </Link>
+        </motion.div> */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="flex flex-col items-center justify-center text-center text-white z-20 w-full max-w-2xl px-4 absolute inset-0"
+        >
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">
+            Welcome To KBot!
+          </h1>
+          <p className="mb-8 text-base sm:text-lg text-gray-100">
+            Your intelligent assistant for quick and accurate information
+          </p>
+          <Link
+            href="/chat"
+            className="group inline-flex items-center gap-2 py-3 px-6 sm:py-4 sm:px-8 bg-[#8f0e0e] text-white text-lg sm:text-xl font-medium rounded-full hover:bg-[#a51212] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             Get Started
             <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />

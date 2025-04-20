@@ -166,7 +166,7 @@ export default function ChatScreen() {
     <div className="flex flex-col h-screen bg-gray-50">
       <TopBar />
 
-      <div className="flex-1 overflow-y-auto pt-16 pb-32 px-4 bg-[rgb(255,220,220)]">
+      <div className="flex-1 overflow-y-auto pt-16 pb-[15rem] px-4 bg-[rgb(255,220,220)]">
         <div className="max-w-3xl mx-auto">
           <div className="space-y-6 py-4">
             <AnimatePresence>
